@@ -1,0 +1,52 @@
+#form4{
+    /* background-color: #1a2563; */
+    display: flex;
+    gap: 1em;
+    height: 14.5em;
+}
+
+#form4 .genres_platforms{
+    background-color: #2e3133;
+    width: 8em;
+    color: #999;
+    /* text-indent: .5em; */
+
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.inputCheckBox{
+    text-align: left;
+    font-weight: bold;
+    transition: .5s;
+
+    /* height: 2.5em; */
+}
+
+.inputCheckBox:hover{
+    font-size:1.5em;
+    color: #7633c2;
+    background: #c4b31f;
+    box-shadow: 0 0 10px #7633c2, 0 0 40px #7633c2, 0 0 80px #7633c2;
+}
+
+.inputCheckBox input{
+    display: none;
+}
+
+.inputCheckBox label{
+    display: block;
+    box-sizing: content-box;
+
+    width: 100%;
+    
+    margin: .5em 0;
+    border: .5em solid transparent;
+    /* background-color: blueviolet; */
+}
+
+input[type="checkbox"]:checked + label{
+    background: #c4b31f;
+    box-shadow: 0 0 10px #7633c2, 0 0 40px #7633c2, 0 0 80px #7633c2;
+    color: #7633c2;
+}

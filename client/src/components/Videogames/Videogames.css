@@ -1,0 +1,81 @@
+#navVideogame{
+    background-color: #1a2563;
+}
+
+
+/* ====================== SearchBar ==================== */
+#searchBar{
+    background-color: rgba(75, 55, 99, 0.8);
+    margin: auto;
+    height: 3em;
+    width: 25em;
+    padding: .5em 1em;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#searchBar input{
+    flex: 1;
+    background-color: transparent;
+    outline: none;
+    border: 0;
+    /* border-bottom: red solid 5px; */
+    padding: 1em 1em;
+    font-size: 1em;
+    color: aliceblue;
+    /* color: #cac7ff; */
+}
+
+#searchBar input::placeholder{
+    color:aliceblue;
+}
+
+#searchBar button{
+    height: 4em;
+    width: 4em;
+
+    /* background-color: #7633c2; */
+    background-color: transparent;
+    background-image: url(../../images/Search_icon_white.png);
+    background-size: 2em;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border-color: transparent;
+    border-radius: 50%;
+
+    cursor: pointer;
+    transition: 1s;
+}
+
+#searchBar button:hover{
+    background-color: #c4b31f;
+    box-shadow: 0 0 10px #7633c2, 0 0 40px #7633c2, 0 0 80px #7633c2;
+}
+
+
+/* ====================== SearchBar ==================== */
+
+
+
+
+
+#displayVideogames{
+    /* background-color: rgba(71, 71, 71, 0.8); */
+    background-color: rgba(75, 55, 99, 0.8);
+
+    width: 90%;
+    min-height: 4em;
+    margin-left: 5%;
+    margin-right: 5%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    align-items: center;
+
+}
+
+

@@ -1,0 +1,40 @@
+
+#orderFilterBar input{
+    border: none;
+    height: 2em;
+    min-width: 2em;
+    font-size: medium;
+    transition: .5s;
+    background-color: rgba(75, 55, 99, 0.8);
+    color: aliceblue;
+    cursor: pointer;
+    font-weight: bold;
+}
+#orderFilterBar .select{
+    background-color: #c4b31f;
+    color: #7633c2;
+}
+
+#orderFilterBar input:hover{
+    background-color: #c4b31f;
+    box-shadow: 0 0 10px #7633c2, 0 0 40px #7633c2, 0 0 80px #7633c2;
+    color: #7633c2;
+}
+
+#orderFilterBar input:nth-child(1){
+    
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+}
+#orderFilterBar input:nth-child(2){
+   
+    /* border-bottom-right-radius: 15px; */
+    border-bottom-left-radius: 15px;
+
+}
+#orderFilterBar input:nth-child(3){
+   
+    border-bottom-right-radius: 15px;
+    /* border-bottom-left-radius: 10px; */
+}

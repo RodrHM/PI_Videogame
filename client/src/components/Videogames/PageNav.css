@@ -1,0 +1,60 @@
+#pageNav{
+    background-color: rgba(75, 55, 99, 0.8);
+    /* background-color: aqua; */
+    height: 2em;
+    width: 24em;
+
+    margin: auto;
+
+    border-radius: 50px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+#pageNav .searchArrow{
+    background-color: transparent;
+    height: 2em;
+    border-radius: 50px;
+    border: none;
+    color: aliceblue;
+    transition: .5s;
+    cursor: pointer;
+}
+#pageNav .searchArrow:hover{
+    font-size:1.5em;
+    color: #7633c2;
+    background: #c4b31f;
+    box-shadow: 0 0 10px #7633c2, 0 0 40px #7633c2, 0 0 80px #7633c2;
+}
+
+#pageNav .searchNum{
+    height: 2em;
+    width: 2em;
+    font-size: medium;
+
+    background-color: transparent;
+
+    border-radius: 100%;
+    border: none;
+    color: aliceblue;
+    transition: .5s;
+    cursor: pointer;
+}
+
+#pageNav .searchNum:hover{
+    /* background-color: #1a2563;
+    color: wheat; */
+    font-size:1.5em;
+    color: #7633c2;
+    background: #c4b31f;
+    box-shadow: 0 0 10px #7633c2, 0 0 40px #7633c2, 0 0 80px #7633c2;
+}
+
+.neonButton:hover{
+    color: #255784;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+}

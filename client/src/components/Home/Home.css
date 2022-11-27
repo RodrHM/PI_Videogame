@@ -1,0 +1,19 @@
+#home{
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  
+}
+
+#home #pressStart{
+    /* margin:auto; */
+    height: 10.7em;
+    width: 14.7em;
+
+    background-image: url(../../images/press_start.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
