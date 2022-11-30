@@ -2,7 +2,7 @@ import './Create.css'
 import './inputCheckBox.css'
 
 import { useEffect, useState } from "react"
-import { connect, useDispatch, useSelector } from "react-redux"
+import { useDispatch, useSelector } from "react-redux"
 import { getGenres, getPlatforms, getVideogameById, postNewVideogame, putVideogame } from "../../redux/actions"
 // import InputCheckBox from './InputCheckBox'
 
