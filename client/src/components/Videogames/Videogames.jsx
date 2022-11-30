@@ -21,16 +21,18 @@ const Videogames = (props)=>{
         page: 15,
         search: ''
     })
+    let [page, setPage] = useState(15)
+
     useEffect(()=>{
             dispatch(getVideogames())
             // props.getVideogames()
             console.log('Peticion getVideogames')
             console.log(props)
-    },[])
+    },[dispatch, props])
 
     useEffect(()=>{
-        setUpdate({...update, page:pageState*15})
-    },[pageState])
+        setPage(pageState*15)
+    },[pageState, page])
 
     const inputHandler = ({target})=>{
         setUpdate({...update, search:target.value})
@@ -72,7 +74,7 @@ const Videogames = (props)=>{
                 {/* Mostrar todos los videojuegos */}
                 {
                     videogames.length?
-                    videogames.slice(update.page-15, update.page).map(
+                    videogames.slice(page-15, page).map(
                         dataVideogame => <Card
                             id = {dataVideogame.id}
                             name = {dataVideogame.name}

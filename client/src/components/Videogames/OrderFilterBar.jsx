@@ -15,7 +15,7 @@ const OrderFilterBar = ()=>{
     const dispatch = useDispatch()
     useEffect(()=>{
         dispatch(filterCreate(orderFilter.validateCreate))
-    },[orderFilter.validateCreate])
+    },[orderFilter.validateCreate, dispatch])
 
     // useEffect(()=>{
     //     dispatch(orderByAlfabetOrRating(orderFilter.orderAlphabet))

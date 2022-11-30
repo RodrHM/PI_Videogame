@@ -1,5 +1,5 @@
 import { useEffect } from "react"
-import { connect, useDispatch, useSelector } from "react-redux"
+import { useDispatch, useSelector } from "react-redux"
 import { getVideogameById } from "../../redux/actions"
 import { Link } from "react-router-dom";
 
@@ -13,7 +13,7 @@ const Videogame = ()=>{
         const id = window.location.pathname.split('/').at(-1)
         console.log(id)
         dispatch(getVideogameById(id))
-    },[])
+    },[dispatch])
 
     const stgGenres = videogameDetails.Genres ? videogameDetails.Genres.map(g=>g.genre).join(', ') : null
     const stgPlatforms = videogameDetails.Platforms ? videogameDetails.Platforms.map(p=>p.platform).join(', ') : null

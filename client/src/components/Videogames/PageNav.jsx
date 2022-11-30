@@ -8,7 +8,7 @@ const PageNav = (props)=>{
 
     const [state, setState] = useState(1)
 
-    useEffect(()=> props.pageChange(state) ,[state])
+    useEffect(()=> props.pageChange(state) ,[state, props])
 
     const pageChangeHandlerByArrow = (num)=>{
         try {

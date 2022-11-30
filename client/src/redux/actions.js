@@ -6,7 +6,7 @@ import { DELETE_VIDEOGAME_BY_ID, FILTER_CREATE, GET_GENRES, GET_PLATFORMS, GET_V
 export const getVideogames = ()=>{
     console.log('getVideogame')
     return (dispatch)=> {
-        axios.get('http://localhost:3001/videogames')
+        axios.get('/videogames')
         .then(
             data=> {
                 console.log(data)
@@ -22,7 +22,7 @@ export const getVideogames = ()=>{
 export const searchVideogameByName = (name)=>{
     // console.log('getVideogame')
     return (dispatch)=> {
-        axios.get(`http://localhost:3001/videogames?search=${name}`)
+        axios.get(`/videogames?search=${name}`)
         .then(
             data=> {
                 return dispatch({
@@ -38,7 +38,7 @@ export const getVideogameById = (id)=>{
     // console.log('getVideogame')
     // if(!id) return {type:GET_VIDEOGAME_BY_ID, payload:{}}
     return (dispatch)=> {
-        axios.get(`http://localhost:3001/videogame/${id}`)
+        axios.get(`/videogame/${id}`)
         .then(
             data=> {
                 console.log(data)
@@ -55,7 +55,7 @@ export const postNewVideogame = (body)=>{
     // console.log('getVideogame')
     console.log(body)
     return (dispatch)=> {
-        axios.post(`http://localhost:3001/videogames`, body)
+        axios.post(`/videogames`, body)
         .then(
             data=> {
                 console.log(data.data.id)
@@ -78,7 +78,7 @@ export const pageChange = (num)=>{
 export const getGenres = ()=>{
     // console.log('getVideogame')
     return (dispatch)=> {
-        axios.get(`http://localhost:3001/genres`)
+        axios.get(`/genres`)
         .then(
             data=> {
                 console.log(data)
@@ -94,7 +94,7 @@ export const getGenres = ()=>{
 export const getPlatforms = ()=>{
     // console.log('getVideogame')
     return (dispatch)=> {
-        axios.get(`http://localhost:3001/platforms`)
+        axios.get(`/platforms`)
         .then(
             data=> {
                 console.log(data.data)
@@ -123,7 +123,7 @@ export const orderByAlfabetOrRating = (AlphabetRating)=>{
 export const deleteVideogameById = (id)=>{
     // console.log('getVideogame')
     return (dispatch)=> {
-        axios.delete(`http://localhost:3001/videogames/${id}`)
+        axios.delete(`/videogames/${id}`)
         .then(
             data=> {
                 console.log(data.data)
@@ -139,7 +139,7 @@ export const deleteVideogameById = (id)=>{
 export const putVideogame = (body, id)=>{
     // console.log('getVideogame')
     return (dispatch)=> {
-        axios.put(`http://localhost:3001/videogames/${id}`, body)
+        axios.put(`/videogames/${id}`, body)
         .then(
             data=> {
                 console.log(data.data)

@@ -31,13 +31,13 @@ const Create = (props)=>{
     const id = window.location.search.split('=').at(-1)
     console.log(id)
 
-    const dispatch = useDispatch()
     // const postNewVideogame = dispatch(postNewVideogame())
+    const dispatch =  useDispatch()
     useEffect(()=>{
         dispatch(getGenres())
         dispatch(getPlatforms())
         if(id) dispatch(getVideogameById(id))
-    },[])
+    },[dispatch, id])
     const allGenres = useSelector(state => state.allGenres)
     // console.log(allGenres)
     const allPlatforms = useSelector(state => state.allPlatforms)
@@ -80,7 +80,7 @@ useEffect(()=>{
             background_image:videogameDetails.background_image
         })
     }
-},[])
+},[videogameDetails, id])
 
     console.log(form)
 
