@@ -6,31 +6,24 @@ const {platforms} = require('../../platforms.json')
 
 console.log('Controllers')
 
-const key = '99685df1c92c462dad724e128601dc2b';
+const key = '1d256adda6c2455dbfb46b11cdc78889';
 
-try { 
     const postGenrePlatform = async ()=>{
-        const valuesGenre = await axios.get(`https://api.rawg.io/api/genres?key=${key}`)
+        // const valuesGenre = await axios.get(`https://api.rawg.io/api/genres?key=${key}`)
         // console.log(valuesGenre)
-        const promisesGenre = valuesGenre.data.results.map( ele => Genre.create({ genre: ele.name, id: ele.id }) );
-        // const promisesGenre = genres.map( ele => Genre.create({ genre: ele.name, id: ele.id }) );
+        // const promisesGenre = valuesGenre.data.results.map( ele => Genre.create({ genre: ele.name, id: ele.id }) );
+        const promisesGenre = genres.map( ele => Genre.create({ genre: ele.name, id: ele.id }) );
         await Promise.all(promisesGenre)
-
 
         // const promisesPlatform = valuePlatform.map( ele => Platform.create({ platform:ele.name}))
         const promisesPlatform = platforms.map( ele => Platform.create({ platform:ele.name, id: ele.id}))
         await Promise.all(promisesPlatform)
-        
+
     }
-    postGenrePlatform()
-    console.log('generos de videojuegos cargados')
-} catch (error) {
-    console.log('Hubo un error al cargar los datos')
-    console.log(error.message)
-}
 
 
 module.exports = {
+    postGenrePlatform,
       //=========================================================================================================
     getModel: async (model)=>{
         const findModel = await model.findAll()
@@ -92,7 +85,7 @@ module.exports = {
         let videogamesByName = data.data.results.map(
              videogame => {
                 const genres = videogame.genres.map( g => {return {genre:g.name}})
-                console.log(genres)
+                // console.log(genres)
                 const values = {
                     id: videogame.id,
                     name: videogame.name,

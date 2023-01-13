@@ -20,11 +20,13 @@
 
 const server = require('./src/app.js');
 const { conn } = require('./src/db.js');
+const { postGenrePlatform } = require('./src/routes/controllers.js');
 const port = process.env.PORT || 3001
 
 // Syncing all the models at once.
 conn.sync({ force: true }).then(() => {
   server.listen(port, () => {
+    postGenrePlatform()
     console.log(`%s listening at ${port}`); // eslint-disable-line no-console
   });
 });

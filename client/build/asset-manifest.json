@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d0e29f67.chunk.css",
+    "main.js": "/static/js/main.796eda46.chunk.js",
+    "main.js.map": "/static/js/main.796eda46.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.dd7407ba.js",
+    "runtime-main.js.map": "/static/js/runtime-main.dd7407ba.js.map",
+    "static/js/2.d1b2e6f9.chunk.js": "/static/js/2.d1b2e6f9.chunk.js",
+    "static/js/2.d1b2e6f9.chunk.js.map": "/static/js/2.d1b2e6f9.chunk.js.map",
+    "static/js/3.d2b7296a.chunk.js": "/static/js/3.d2b7296a.chunk.js",
+    "static/js/3.d2b7296a.chunk.js.map": "/static/js/3.d2b7296a.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.d0e29f67.chunk.css.map": "/static/css/main.d0e29f67.chunk.css.map",
+    "static/js/2.d1b2e6f9.chunk.js.LICENSE.txt": "/static/js/2.d1b2e6f9.chunk.js.LICENSE.txt",
+    "static/media/VideogameDetails.css": "/static/media/edit_icon2.2bd449c4.png",
+    "static/media/TopNav.css": "/static/media/github.2daf8617.png",
+    "static/media/index.css": "/static/media/neon_home.8304223b.gif",
+    "static/media/Cubo.css": "/static/media/press_start.ba140dad.gif",
+    "static/media/star_icon.060a2551.png": "/static/media/star_icon.060a2551.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.dd7407ba.js",
+    "static/js/2.d1b2e6f9.chunk.js",
+    "static/css/main.d0e29f67.chunk.css",
+    "static/js/main.796eda46.chunk.js"
+  ]
+}
